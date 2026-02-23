@@ -162,10 +162,10 @@ func (t *LegacyTerraformed) GetMergedParameters(_ bool) (map[string]any, error) 
 type ModernTerraformed struct {
 	metav1.TypeMeta `json:",inline"`
 	fake.ModernManaged
-	Observable      `json:"observable"`
-	Parameterizable `json:"parameterizable"`
+	Observable       `json:"observable"`
+	Parameterizable  `json:"parameterizable"`
 	MetadataProvider `json:"metadataProvider"`
-	LateInitializer `json:"lateInitializer"`
+	LateInitializer  `json:"lateInitializer"`
 }
 
 // GetObjectKind returns schema.ObjectKind.
